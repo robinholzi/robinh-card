@@ -32,10 +32,33 @@ function extractLinks(input: string): (string | [string, string])[] {
 /**
  * Supports links in markdown format
  */
-export default function CvElement({ mdText }: { mdText: string }) {
+export default function CvElement({
+  mdText,
+  mdDetail,
+  ongoingSince
+}: {
+  mdText: string
+  mdDetail?: string
+  ongoingSince?: Date
+}) {
   const parts = []
 
-  for (const part of extractLinks(mdText)) {
+  let durationStr = ''
+  if (ongoingSince) {
+    const currentDate = new Date()
+    const durationMonths =
+      (currentDate.getFullYear() - ongoingSince.getFullYear()) * 12 +
+      (currentDate.getMonth() + 1 - ongoingSince.getMonth()) +
+      1 +
+      (currentDate.getDate() < ongoingSince.getDate() ? -1 : 0)
+    const durationYears = Math.floor(durationMonths / 12)
+    const yearsStr = durationYears > 0 ? `${durationYears} year${durationYears > 1 ? 's' : ''}` : ''
+    durationStr = ` ${yearsStr} ${durationMonths % 12} month${durationMonths % 12 > 1 ? 's' : ''}`
+  }
+
+  const compositeMarkdown = mdText + (mdDetail ? ' | ' + mdDetail : '') + durationStr
+
+  for (const part of extractLinks(compositeMarkdown)) {
     if (parts.length > 0) {
       parts.push(<span>&nbsp;</span>)
     }

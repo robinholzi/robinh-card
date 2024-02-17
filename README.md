@@ -1,4 +1,4 @@
-# robinh_card
+# robinh-card
 
 Personal web based business card written in next.js with TypeScript, React and TailwindCSS.
 

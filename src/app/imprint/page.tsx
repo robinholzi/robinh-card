@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import HeadfulCard from '@/components/HeadfulCard/HeadfulCard'
 import CtaButton from '@/components/CtaButton/CtaButton'
 
@@ -23,14 +24,10 @@ export default function MainPage() {
 
               <h2 className="text-xl xs:text-2xl">Contact</h2>
               <br />
-              <strong>
-                Phone: 01749769452
-                <br />
-                Email: info@robinh.me
-              </strong>
+              <div style={{ width: 200, margin: '0 auto 0 auto' }}>
+                <Image src={'/img/contact_details.png'} width={512} height={256} alt={'contact details'} />
+              </div>
               <br />
-              <br />
-
               <strong>
                 Source: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
               </strong>

@@ -44,10 +44,10 @@ const HeaderCard = () => {
           href="https://github.com/robinholzi"
         />
         <CtaIconButton
-          iconPath="/ico/stackoverflow.svg"
-          alt="StackOverflow"
+          iconPath="/ico/cv.svg"
+          alt="Curriculum Vitae"
           bgColor="rgb(237, 128, 61)"
-          href="https://stackoverflow.com/users/7307260/nerotyc"
+          href="https://cv.robinh.me"
         />
       </div>
     </HeadfulCard>

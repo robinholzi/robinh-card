@@ -11,14 +11,14 @@ const HeaderCard = () => {
       <div className="my-4">
         <CvElement
           mdText={'CS Student [@TUM](https://www.tum.de/en/)' + futureThesis}
-          mdDetail="top 2%: [best-in-tum](https://www.cit.tum.de/en/cit/studies/students/advising/informatics/tips-for-successful-studies/support-programs/)"
+          mdDetail="top 1%: [best-in-tum](https://www.cit.tum.de/en/cit/studies/students/advising/informatics/tips-for-successful-studies/support-programs/)"
         />
         <CvElement
-          mdText="SWE Intern, Working Student [@QuantCo](https://quantco.com/)"
+          mdText="Intern and Fulltime [@QuantCo](https://quantco.com/)"
           mdDetail="6, "
           ongoingSince={new Date(2023, 11, 1)}
         />
-        <CvElement mdText="SWE Working Student [@FINN](https://www.finn.com/en-US)" mdDetail="7 months" />
+        <CvElement mdText="Working Student [@FINN](https://www.finn.com/en-US)" mdDetail="7 months" />
         <CvElement mdText="Abitur [@JGG](https://jgg-waldkirchen.de/)" mdDetail="top 0.5% within Bavaria" />
       </div>
 

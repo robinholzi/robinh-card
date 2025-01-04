@@ -27,7 +27,7 @@ const HeaderCard = () => {
 
         <CvElement mdText="[Max Weber Program](https://www.elitenetzwerk.bayern.de/en/home/funding-programs/max-weber-program)" />
         <CvElement mdText="[German Academic Scholarship Foundation](https://www.studienstiftung.de/en/)" />
-        <CvElement mdText="[IT-Talents & Mathema GmbH](https://it-talents.de/partnerunternehmen/it-stipendien/robin-erhaelt-ein-it-stipendium/)" />
+        <CvElement mdText="[IT-Talents & Mathema GmbH](https://it-talents.de/partnerunternehmen/it-stipendien/)" />
       </div>
 
       <div className="mt-8 mb-4">
